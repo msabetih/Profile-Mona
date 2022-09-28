@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+    <head>
+
+        <title>Mona's Portfolio</title>
+
+        <div class="navigation">
+
+            <a class = "main" href="#home">Home</a>
+            <a href="#aboutme">About Me</a>
+            <a href="#workexperience">Work Experience</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+        <style>
+
+            /*Formats the navigation bar */
+            .navigation{
+                overflow: hidden;
+                background-color: rgb(62, 62, 62);
+            }
+
+            /*Formats the elements in the navigation bar*/
+            .navigation a{
+                float:left;
+                padding: 20px 30px;
+                color:white;
+                font-size: 20px;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+
+            /*Causes the elements in the navigation bar to change background colour when hovered over*/
+            .navigation a:hover{
+                background-color: rgb(201, 201, 201);
+            }
+
+            /*Differentiates the format of the "home" element on the navigation bar*/
+            .navigation a.main{
+                background-color:rgb(184, 162, 255);
+                color:black;
+            }
+
+            /*Centers the image*/
+            .center-img{
+                display:block;
+                margin-left:auto;
+                margin-right:auto;
+                width:50%;
+            }
+
+            /*Centers the buttons*/
+            .center-button{
+                display:block;
+                margin-left:auto;
+                margin-right:auto;
+                height:40px;
+                width:100px;
+                font-family:Arial, Helvetica, sans-serif;
+                font-size: medium;
+                background-color: rgb(97, 97, 97);
+                color:white;
+
+            }
+
+            /*formats the list*/
+            ul{
+                font-family: Arial, Helvetica, sans-serif;
+                display:table;
+                margin: auto;
+                text-align: left;
+            }
+
+            /*Sets the font for the h1 and h4 tags and centers them*/
+            h1, h2, h3, h4{
+                font-family:Arial, Helvetica, sans-serif;
+                text-align: center;
+            }
+
+            /*Centers the paragraph*/
+            .paragraphs{
+                text-align: justify;
+                margin-left:auto;
+                margin-right:auto;
+                width:90%;
+            }
+
+            /*Formats the contact information in the form section*/
+            .contact{
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+            }
+
+            /*Sets the background colour of the page*/
+            body{
+                background-color: rgb(209, 202, 255);
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <h1>I am Mona Sabeti</h1>
+        <h4>This is my dog, Toby Sabeti <br></h4>
+        <button class="center-button">Hire Me</button>
+        <p></p>
+        <img src="imgs/dog.jpeg" alt="Picture of dog" width = 600px class="center-img">
+
+        <h1 id="aboutme"><u>About Me </u></h1>
+        <p class="paragraphs">I am a second year software engineering student. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Aenean sit amet arcu finibus, aliquam libero sit amet, vestibulum elit. Phasellus eleifend eu nulla ac consectetur. Aenean
+          cursus elementum ante. Donec mollis cursus tellus non congue. Nulla ultricies bibendum sem, vitae tristique eros hendrerit ut.
+          Vivamus id cursus lorem. Integer vel maximus lacus. Donec posuere lacinia magna at condimentum. Sed venenatis volutpat sem sit
+          amet molestie. Etiam in lobortis erat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sitarcu finibus, aliquam
+          libero sit amet, vestibulum elit. Phasellus eleifend eu nulla ac consectetur. Aenean cursus elementum ante. Donec mollis cursus
+          tellus non congue. Nulla ultricies bibendum sem, vitae tristique eros hendrerit ut. Vivamus id cursus lorem. Integer vel maximus
+          lacus. Donec posuere lacinia magna at condimentum. Sed venenatis volutpat sem sit amet molestie. Etiam in lobortis erat.
+        </p>
+
+        <h2>My Skills</h2>
+
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>Java</li>
+        </ul>
+
+        <h1 id="workexperience"><u>Work Experience</u></h1>
+
+        <h3>Access Database Created</h3>
+        <h3>Game Design</h3>
+        <h3>Website Design</h3>
+
+        <h1 id="contact"><u>Contact</u></h1>
+
+        <form>
+            <div class="contact">
+                <label for="fname">First Name</label>
+                <input type="text" name="firstname" placeholder="Your name">
+
+                <p></p>
+
+                <label for="lname">Last Name</label>
+                <input type="text" name="lastname" placeholder="Your last name">
+
+                <p></p>
+
+                <label for="number">Phone Number</label>
+                <input type="text" name="number" placeholder="Your phone number">
+
+                <p></p>
+
+                <label for="email">Email</label>
+                <input type="text" name="email" placeholder="Your email">
+            </div>
+        </form> 
+
+        <p></p>
+        
+        <button class="center-button">Submit</button>
+
+
+    </body>
+</html>
